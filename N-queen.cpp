@@ -4,7 +4,6 @@
 #include <vector>
 #include <array> 
 
-
 #define SIZE 4
 #define SPACE " "
 #define BLANK 0
