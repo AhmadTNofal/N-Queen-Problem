@@ -5,7 +5,7 @@
 #include <array> 
 
 
-#define SIZE 8
+#define SIZE 4
 #define SPACE " "
 #define BLANK 0
 #define LINE "|"
