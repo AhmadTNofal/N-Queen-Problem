@@ -1,3 +1,33 @@
+/*
+N-Queen problem is a classical problem of placing N chess queens 
+on an N×N chessboard in such a way that no two queens threaten each other. 
+In other words, the solution must have no two queens share the same row, column, or diagonal.
+
+The program is implemented using backtracking, which is a general algorithmic
+technique for finding all (or some) solutions to a computational 
+problem that incrementally builds candidates to the solutions 
+and abandons a candidate ("backtracks") as soon as it determines that the 
+candidate cannot possibly be completed to a valid solution.
+
+The program first initializes an empty chess board with zeros. 
+Then it starts placing queens in each row one by one, 
+and checks if the queen is safe to place using the safetyCheck function. 
+If the position is safe, it places the queen on that position and calls the nQueenSolver 
+function recursively to place the remaining queens. If the solution is found, it returns 1, 
+otherwise it backtracks and removes the queen from that position and tries the next position.
+
+The safetyCheck function checks if there is any queen in the same row, column, or diagonal, 
+and returns 0 if there is any, otherwise it returns 1. The rowCheck and colCheck functions check 
+for queens in the same row and column respectively, while the diagonalCheckLeft and diagonalCheckRight 
+functions check for queens in the left and right diagonal respectively.
+
+The printChessBoard function prints the chess board with the queens placed as "♕". 
+It prints the board using loops, and prints horizontal and vertical lines using strings.
+
+The main function calls the nQueenSolver function with the size of the chess board, 
+which is set to 8 by default. It then calls the printChessBoard function to print the solution.
+*/
+
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
